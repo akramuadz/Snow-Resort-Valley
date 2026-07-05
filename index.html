@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Snow Valley Resort</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div id="container">
+	<div id="main">
+		<div id="nav">
+			<ul>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Home</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Our tours</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Photo gallery</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Community</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">About us</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Contact us</a></li>
+			</ul>
+		</div>
+		<div id="header"></div>
+		<div id="welcomeTyping"></div>
+		
+		<div id="content">
+			<div id="left">
+				<div class="post">
+					<h1>Experience Winter Like Never Before</h1>
+					<p>Discover the beauty of snowy mountains with comfortable accommodation and unforgettable outdoor adventures.</p>
+				</div>
+				<br>
+				<div>
+					<h1>Welcome to Snow Valley Resort</h1>
+					<p>Escape to a peaceful winter destination surrounded by breathtaking mountain scenery. Whether you're looking for exciting ski adventures or a relaxing holiday with your family, Snow Valley Resort offers a memorable experience for everyone.</p>
+				</div>
+				<div class="post">
+					<h1>Why Choose Us</h1>
+					<p>Beautiful Scenery</p>
+					<p>Enjoy panoramic mountain views covered in fresh snow throughout the winter season.</p>
+					<p class="vertical-line"></p>
+					<p>Comfortable Villas</p>
+					<p>Stay in warm and cozy accommodations designed for families, couples, and groups.</p> 
+					<p class="vertical-line"></p>
+					<p>Exciting Activities</p>
+					<p>Experience skiing, snowboarding, snow tubing, and many other fun winter activities.</p>				
+				</div>
+			</div>
+			<div id="right">
+
+				<h3>Check out our villa</h3>
+
+				<div class="gallery">
+
+					<a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">
+						<img src="images/villa1.jpg">
+					</a>
+
+					<a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">
+						<img src="images/villainterior1.jpg">
+					</a>
+
+					<a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">
+						<img src="images/villainterior2.jpg">
+					</a>
+
+					<a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">
+						<img src="images/villa2.jpg">
+					</a>
+
+					<a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">
+						<img src="images/ski1.jpg">
+					</a>
+
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Home</a></li> | 
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Our tours</a></li> | 
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Photo gallery</a></li> | 
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Community</a></li> | 
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">About us</a></li> | 
+			<li><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">Contact us</a></li>
+		</ul>
+		<span><a href="https://freewebsitetemplates.com/preview/skitemplate/index.html">This the link for the website template </a> </span>
+		<p>ID: 25229040 (72) | Muhammad Akram Muadz</p>
+	</div>
+</div>
+<script>
+const visitorName = prompt("Welcome! What is your name?");
+
+alert("Welcome to Snow Valley Resort, " + visitorName + "!");
+
+const message = "Have a great winter adventure, " + visitorName + "!";
+let i = 0;
+let isDeleting = false;
+
+function typeLoop() {
+    const text = document.getElementById("welcomeTyping");
+
+    if (!isDeleting) {
+        text.innerHTML = message.substring(0, i);
+        i++;
+
+        if (i > message.length) {
+            isDeleting = true;
+            setTimeout(typeLoop, 1500);
+            return;
+        }
+    } else {
+        text.innerHTML = message.substring(0, i);
+        i--;
+
+        if (i < 0) {
+            isDeleting = false;
+            i = 0;
+        }
+    }
+
+    setTimeout(typeLoop, 80);
+}
+
+window.onload = function () {
+    typeLoop();
+};
+</script>
+
+</body>
+</html>
